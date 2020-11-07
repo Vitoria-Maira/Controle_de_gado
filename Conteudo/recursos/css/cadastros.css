@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+.bg-title {
+    background: url('../imagens/fundo.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    
+}
+
+.fundo{
+    background-color:#049e51d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+

@@ -1,0 +1,68 @@
+
+
+.login-box{
+  width: 320px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  background:#f8f8f838;
+  border-color:white;
+  border:solid 1px;
+  border-radius:20px black;
+
+  
+}
+
+.login-box h1{
+  float: center;
+  font-size: 40px;
+  border-bottom:;
+  margin-bottom:40px ;
+  padding: 13px 0;
+  text-align:center;
+  
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 5px 0;
+  margin: 5px 0;
+  color:#F8F8FF;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input{
+  border-radius: 20px;
+  border-color:white;
+  outline:none ;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+  background-color: transparent;
+}
+
+.btn{
+  width: 100%;
+  background:#FFE4C4;
+  color: rgb(3, 3, 3);
+  font-size: 30px;
+  cursor: pointer;
+/* definimos o quão arredondado irá ficar nosso box */
+  border-radius: 20px;
+  border-color:white;
+  
+ 
+}
+
+
+

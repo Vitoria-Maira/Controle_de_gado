@@ -1,0 +1,92 @@
+{
+  "Curso": "Desenvolvimento de Sistemas",
+  "Data": "",
+  "Horario": "19:00 - 23:00",
+  "Instituição": "Etec",
+  "Cidade": "Cafelândia",
+  "Estado": "SP",
+  "Coordenador": {
+    "Nome": "",
+    "Cidade": "",
+    "Codigo": "",
+    "Endereço": "",
+    "Telefone": "",
+    "Email": ""
+  },
+  "Professores": [
+    {
+      "Nome": "",
+      "Telefone": "",
+      "Codigo": "",
+      "Email": "",
+      "Horario": "",
+      "Materia": ""
+    },
+    {
+      "Nome": "",
+      "Telefone": "",
+      "Codigo": "",
+      "Email": "",
+      "Horario": "",
+      "Materia": ""
+    },
+    {
+      "Nome": "",
+      "Telefone": "",
+      "Codigo": "",
+      "Email": "",
+      "Horario": "",
+      "Materia": ""
+    },
+    {
+      "Nome": "",
+      "Telefone": "",
+      "Codigo": "",
+      "Email": "",
+      "Horario": "",
+      "Materia": ""
+    }
+  ],
+  "Cidades": [
+    {
+      "Cidade1": ".."
+    },
+    {
+      "Cidade2": ".."
+    },
+    {
+      "Cidade3": ".."
+    }
+  ],
+  "Materia": [
+   
+    {
+      "01": "Linguagem,Trabalho e Tecnologia",
+      "02": "Programação e Algoritmos",
+      "03": "Banco de Dados 1",
+      "04": "Análise e Projeto de Sistemas",
+      "05": "Design Digital",
+      "06": "Programação Web I",
+      "07": "Programação Web I",
+      "08": "Técnicas de Programação"
+    },
+     {
+      "01": "Inglês Instrumental",
+      "02": "Desenvolvimento de Sistemas",
+      "03": "Banco de Dados II",
+      "04": "Internet e Protocolos",
+      "05": "Programação de Aplicativos Mobile I",
+      "06": "Programação Web II",
+      "07": "Planejamento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas"
+     }
+     
+  ],
+  "Aluno": {
+    "Nome": "...",
+    "RA": "...",
+    "Email_Institucional": "...",
+    "Horarios_das_aulas": "..",
+    "Cronográma": "Dias da semana",
+    "telefone": ".."
+  }
+}

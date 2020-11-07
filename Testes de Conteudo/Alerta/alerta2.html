@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sweetalert.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <title>Alerta 02</title>
+
+
+
+
+</head>
+<body>
+    <div class="container" style="padding-top:100px;">
+     
+<form action="">
+    <input type="text" id="name" placeholder="name" class="form-control">
+    <input type="text" id="email" placeholder="email" class="form-control">
+    <input type="text" id="phone" placeholder="phone" class="form-control">
+
+    <button type="button" id="submit" class="btn btn-primary">Sucesso</button>
+
+</form>
+
+
+</div>
+<script src="../js/sweetalert.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <script>
+        debugger;
+        $('#submit').click(function(){
+           var name= $("#name").val();
+           var email= $("#email").val();
+           var phone= $("#phone").val();
+
+           if(name==''|| email== ''|| phone== ''){
+            swal({
+                title: "Opis!",
+            text: "Tente novamente",
+            icon: "warning",
+            button: "Voltar",
+                });
+           }else{
+            swal({
+                title: "Parabéns!",
+            text: "Cadastro feito com Sucesso",
+            icon: "success",
+            button: "Concluir",
+                }); 
+           }
+           
+        });
+    </script>
+    
+
+   
+    
+</body>
+</html>

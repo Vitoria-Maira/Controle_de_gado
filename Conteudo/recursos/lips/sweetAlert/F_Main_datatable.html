@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Buttons for DataTables -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+
+	<!--
+	<style>
+		/* esse css é responsável por não deixar o html espremer as colunas criando quantas linhas forem necessárias */
+		/* com ele se não couber na celula ele vai ocultar para quando clicar no maiszinho verde abrir os dados da responsividade */		
+		td {
+			white-space: nowrap !important;
+		}
+	</style>
+-->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>DataTable Responsiva e Server-Side usando o IW 15 com CallBack</h3><br />
+				<h4><b>Tabela de Produtos</b> - <a href="http://www.marcelogirattocursos.com.br">Marcelo Giratto Cursos</a></h4><br />
+				<h5></h5>
+				<br />
+				<table id="example" class="display" style="width:100%">
+					<thead>
+						<tr>
+							<th>Codigo</th>
+							<th>Descrição</th>
+							<th>Referencias</th>
+							<th>Adicionais</th>
+							<th>Ação</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			var table = $('#example').DataTable({
+				serverSide: true,
+
+				ajax: "/$/callback?callback=Tabela",
+
+				dom: 'sBlfrtip',
+
+				lengthMenu: [
+					[10, 25, 100, -1],
+					[10, 25, 100, "Todos"]
+				],
+				pageLength: 10,
+
+				"paging": true,
+				"ordering": true,
+				"searching": true,
+				processing: true,
+				responsive: true,
+
+				buttons: ['copy', 'excel', 'csv', 'pdf'],
+
+
+
+				"language": {
+					"decimal": ",",
+					"emptyTable": "Nenhum registro encontrado com esse filtro!",
+					"info": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+					"infoEmpty": "Nenhum registro encontrado!",
+					"infoFiltered": "(filtrados de _MAX_ total registros)",
+					"infoPostFix": "",
+					"thousands": ".",
+					"lengthMenu": "Mostrando _MENU_ registros",
+					"loadingRecords": "Carregando...",
+					"processing": "Processando...",
+					"search": "Pesquisar:",
+					"zeroRecords": "Nenhum registro encontrado",
+					"paginate": {
+						"first": "Primeira",
+						"last": "Última",
+						"next": "Próxima",
+						"previous": "Anterior"
+					},
+					"aria": {
+						"sortAscending": ": ativar para classificar a coluna ascendente",
+						"sortDescending": ": ativar para classificar a coluna descendente"
+					}
+				},
+
+			});
+
+		});
+
+	</script>
+
+</body>
+
+</html>
